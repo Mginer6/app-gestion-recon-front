@@ -1,0 +1,32 @@
+# --- Frontend (React + Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/*.local
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# --- Visual Studio ---
+**/.vs/
+
+# --- Editor / Sistema ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+npm-debug.log*
+
+
+# --- Certificados clave privada del ServiceProvider ---
+backend/AppGestionReconocimientos.Api/Certificados/*.pfx
+backend/AppGestionReconocimientos.Api/appsettings.Development.json
+
+# --- Certificados clave privada del IdentityProvider simulado (Idp) ---
+backend/IdpSimulado.Api/Certificados/*.pfx
+backend/IdpSimulado.Api/appsettings.Development.json
