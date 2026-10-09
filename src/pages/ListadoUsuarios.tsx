@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import ListadoTabla from '../components/ListadoTabla';
 import { formatearFecha } from '../utils/fechas';
+import { API_URL } from '../appConfig';
 
 interface Usuario {
   idUsuario: number;
@@ -22,7 +23,7 @@ function ListadoUsuarios() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch('https://localhost:7095/api/Usuario')
+    fetch(`${API_URL}/api/Usuario`)
       .then((respuesta) => {
         
         if(!respuesta.ok){
